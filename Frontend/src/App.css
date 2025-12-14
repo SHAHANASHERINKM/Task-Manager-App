@@ -18,7 +18,7 @@ html, body, #root {
 /* Left side */
 .auth-left {
   flex: 0.55;
-  background: #4f46e5;
+  background: #5523a6;
   color: white;
   display: flex;
   flex-direction: column;
@@ -90,7 +90,7 @@ html, body, #root {
 /* Button */
 .auth-button {
   padding: 12px;
-  background-color: #4f46e5;
+  background-color:#5523a6;
   color: white;
   font-size: 16px;
   border: none;
@@ -126,7 +126,7 @@ html, body, #root {
 }
 
 .auth-text span {
-  color: #4f46e5;
+  color: #5523a6;
   cursor: pointer;
   font-weight: 500;
 }
