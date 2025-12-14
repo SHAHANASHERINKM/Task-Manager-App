@@ -1,4 +1,5 @@
 
+
 # Task Manager App
 
 Comprehensive project README for the Task Manager App. This repository contains a Node/Express backend (API) and a React + Vite frontend. The sections below focus on the backend and how to run, configure, and consume the API. A short frontend quick-start is also included.
@@ -153,7 +154,10 @@ curl -H "Authorization: Bearer <token>" http://localhost:5000/api/auth/tasks
 
 ---
 
-If you'd like, I can also:
+## Screenshots
 
-- Add a `.env.example` in `Backend/` listing required variables.
-- Update the frontend services to read the base API URL from `VITE_API_URL` and add a `.env.example` in `Frontend/`.
+<img width="1894" height="878" alt="image" src="https://github.com/user-attachments/assets/8fdd6c5d-f742-47ed-8ca9-70c6336bdc9f" />
+
+<img width="1890" height="888" alt="image" src="https://github.com/user-attachments/assets/6bc98536-64c6-4996-a9b1-9b502294199c" />
+<img width="1913" height="878" alt="image" src="https://github.com/user-attachments/assets/daeeaf86-c65f-40d8-800e-bdfd9c19a43f" />
+
