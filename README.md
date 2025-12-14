@@ -156,4 +156,8 @@ curl -H "Authorization: Bearer <token>" http://localhost:5000/api/auth/tasks
 
 ## Screenshots
 
+<img width="1894" height="878" alt="image" src="https://github.com/user-attachments/assets/8fdd6c5d-f742-47ed-8ca9-70c6336bdc9f" />
+
 <img width="1890" height="888" alt="image" src="https://github.com/user-attachments/assets/6bc98536-64c6-4996-a9b1-9b502294199c" />
+<img width="1913" height="878" alt="image" src="https://github.com/user-attachments/assets/daeeaf86-c65f-40d8-800e-bdfd9c19a43f" />
+
