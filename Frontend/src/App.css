@@ -157,7 +157,7 @@ html, body, #root {
 @media (max-width: 768px) {
   .auth-wrapper {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
   }
 
@@ -165,7 +165,7 @@ html, body, #root {
   .auth-right {
     flex: unset;
     width: 100%;
-    padding: 20px;
+    padding: 12px 10px;
   }
 
   /* Ensure the right card can flow and be scrolled into view */
@@ -174,7 +174,7 @@ html, body, #root {
   }
 
   .auth-card {
-    margin: 0 auto 20px auto;
+    margin: 0 auto 18px auto;
   }
 
   .auth-left h1 {
@@ -185,23 +185,28 @@ html, body, #root {
     font-size: 16px;
   }
 
-  /* Reduce sizes so right card fits fully on small phones */
+  /* Ensure left panel sits above the form and both fit properly */
   .auth-left {
-    padding: 16px;
+    padding: 16px 10px;
+    order: 0;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .auth-left h1 {
     font-size: 22px;
+    margin-bottom: 12px;
   }
 
   .auth-left p {
-    max-width: 320px;
-    padding: 0 10px;
+    max-width: 100%;
+    padding: 0 8px;
+    font-size: 15px;
   }
 
   .auth-card {
-    padding: 24px 20px;
-    max-width: 320px;
+    padding: 22px 18px;
+    max-width: 360px;
   }
 
   .auth-title {
@@ -219,5 +224,29 @@ html, body, #root {
 
   .auth-input, .auth-button {
     width: 100%; /* inputs & button full width on mobile */
+  }
+}
+
+/* Small phones: keep left above form and reduce vertical spacing */
+@media (max-width: 420px) {
+  .auth-left {
+    padding: 12px 10px;
+    order: 0;
+  }
+
+  .auth-right {
+    order: 1;
+    padding: 10px;
+  }
+
+  .auth-card {
+    max-width: 100%;
+    width: 100%;
+    padding: 16px;
+    margin: 6px auto;
+  }
+
+  .auth-title {
+    font-size: 20px;
   }
 }
