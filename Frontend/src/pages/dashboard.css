@@ -72,6 +72,8 @@
   border: 1px solid #ddd;
   border-radius: 8px;
   font-size: 14px;
+  box-sizing: border-box;
+  max-width: 100%;
 }
 
 .task-input.error {
@@ -364,7 +366,7 @@ sible {
     font-size: 14px;
   }
 
-  /* Make inputs and buttons full-width for easier tapping */
+  
   .add-task-card {
     padding: 16px;
     margin: 12px;
@@ -373,6 +375,9 @@ sible {
   .add-task-card .task-input {
     flex: 1 1 100%;
     width: 100%;
+    box-sizing: border-box;
+    max-width: 100%;
+    min-width: 0;
   }
 
   .add-task-button {
@@ -392,13 +397,13 @@ sible {
     align-items: center;
   }
 
-  /* Allow title to wrap on small screens */
+  
   .task-header h3 {
     white-space: normal;
     font-size: 15px;
   }
 
-  /* Make modal responsive */
+ 
   .edit-card {
     width: 90%;
     max-width: 420px;
