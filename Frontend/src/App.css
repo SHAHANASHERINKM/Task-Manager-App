@@ -154,7 +154,7 @@ html, body, #root {
 
 
 /* Responsive for mobile */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .auth-wrapper {
     flex-direction: column;
     align-items: center;
@@ -224,7 +224,31 @@ html, body, #root {
 
   .auth-input, .auth-button {
     width: 100%; /* inputs & button full width on mobile */
+    box-sizing: border-box;
   }
+}
+
+/* Fallback for slightly larger phones/tablets where 768px breakpoint may not trigger */
+@media (min-width: 769px) and (max-width: 900px) {
+  .auth-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .auth-left, .auth-right {
+    width: 100%;
+    padding: 12px 10px;
+  }
+
+  .auth-card {
+    max-width: 420px;
+    width: 100%;
+    margin: 12px auto;
+    padding: 20px;
+  }
+
+  .auth-left h1 { font-size: 24px; }
+  .auth-left p { max-width: 100%; }
 }
 
 /* Small phones: keep left above form and reduce vertical spacing */
